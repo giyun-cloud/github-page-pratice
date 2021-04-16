@@ -1,0 +1,25 @@
+{
+  "name": "12_github_homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.8"
+  },
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giyun-cloud/github-page-pratice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giyun-cloud/github-page-pratice/issues"
+  },
+  "homepage": "https://github.com/giyun-cloud/github-page-pratice#readme"
+}
