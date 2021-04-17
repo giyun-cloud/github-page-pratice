@@ -6,15 +6,26 @@
     weight: 400;
   }
 }
+a {
+  text-decoration: none;
+}
+.section {
+  position: relative;
+}
+.inner {
+  max-width: 980px;
+  margin: 0 auto;
+}
 
 // BTN
 .btn {
   padding: 0 12px;
   height: 34px;
-  display: inline-flex;
+  color: #333;
+  display: flex;
   align-items: center;
-  background: #fcfcfc linear-gradient(to bottom, #eee, #d5d5d5);
-  border: 1px solid #ccc;
+  background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
+  border: 1px solid #d5d5d5;
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
@@ -22,6 +33,7 @@
   position: relative;
   line-height: 1.5;
   box-sizing: border-box;
+  text-align: center;
   &.btn--primary {
     border: 1px solid #65b836;
     background: #55a532 linear-gradient(to bottom, #91dd70, #55ae2e);
@@ -61,5 +73,93 @@
   }
   &::-moz-input-placeholder {
     color: #cacaca;
+  }
+}
+// FLOAT
+.clearyfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.float {
+  &--left {
+    float: left;
+  }
+  &--right {
+    float: right;
+  }
+}
+
+// HEADER
+header {
+  border-bottom: 1px solid rgba(0,0,0,.75);
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
+  background-color: #fff;
+  .menu-group {
+    display: flex;
+    height: 78px;
+    align-items: center;
+    .logo {
+      margin-right: 10px;
+      a {
+        height: 32px;
+        width: 32px;
+        display: block;
+        background-image: url('../img/logo.svg');
+        text-indent: -9999px;
+        &:hover{
+          background-image: url('../img/logo_on.svg');
+        }
+      }
+    }
+    .main-menu {
+      display: flex;
+      li a {
+        padding: 10px;
+        display: block;
+        color: #3c4146;
+        &:hover {
+          color: #4078c0;
+        }
+      }
+    }
+  }
+  .sign-group {
+    display: flex;
+    height: 78px;
+    align-items: center;
+
+    .sign-btns{
+      order: 2;
+      display: flex;
+      .btn:first-child {
+        margin-right: 4px;
+      }
+    }
+    @at-root #search-form {
+      order: 1;
+      margin-right: 12px;
+      @at-root #search {
+        font-size: 14px;
+        width: 160px;
+        & + [type="submit"] {
+          display: none;
+        }
+      }
+    }
+    .sub-menu {
+      display: flex;
+      margin-right: 10px;
+      font-size: 13px;
+      li a {
+        padding: 8px;
+        display: block;
+        color: #3c4146;
+
+        &:hover {
+          color: #4078c0;
+        }
+      }
+    }
   }
 }
