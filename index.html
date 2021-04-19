@@ -32,12 +32,15 @@
   <!-- reset-css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="scss/main.scss" />
+  <!-- <link rel="stylesheet" href="./css/main.scss" /> -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="./js/main.js"></script>
+  <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap"></script>
 </head>
 <body>
 <div class="body__container">
   <header class="section">
-    <div class="inner clearyfix">
+    <div class="inner clearfix">
       <div class="menu-group float--left">
         <div class="logo">
           <a href="">Github-logo</a>
@@ -72,13 +75,13 @@
     <div class="inner">
       <div class="text-group">
         <div class="text__title">
-          How people <br> build software
+          How&nbsp;people build&nbsp;software
         </div>
         <div class="text__description">
-          Millions of developers use GitHub to build personal projects, support their businesses, <br> and work together on open source technologies.
+          Millions of developers use GitHub to build personal projects, support their businesses, and&nbsp;work together on open source technologies.
         </div>
       </div>
-      <form class="sign-up-group" action="">
+      <form id="sign-up-form" method="POST" action="">
         <ul>
           <li><input type="text" class="input--text" placeholder="Pick a username" /></li>
           <li><input type="text" class="input--text" placeholder="Your email address" /></li>
@@ -88,6 +91,78 @@
             <p>By clicking "Sign up for GitHub", you agree to our terms of service and privacy policy. We'll occasionally send you account related emails.</p></li>
         </ul>
       </form>
+    </div>
+  </section>
+
+  <!-- WELCOM -->
+  <section class="section section--welcome">
+    <div class="text-group">
+      <div class="text__title">
+        Welcome home, developers
+      </div>
+      <div class="text__description">
+        GitHub fosters a fast, flexible, and collaborative development process that lets you work on your own or with others.
+      </div>
+    </div>
+    <div class="vedio">
+      <iframe id="player" width="650" height="366" src="https://www.youtube.com/embed/afvT1c1ii0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="tiles">
+      <div class="inner">
+        <ul class="clearfix">
+          <li>
+            <img src="./img/feature-tile__build.png" alt="">
+            <h3>For everything you build</h3>
+            <p>Host and manage your code on GitHub. You can keep your work private or share it with the world.</p>
+          </li>
+          <li>
+            <img src="./img/feature-tile__work.png" alt="">
+            <h3>A better way to work</h3>
+            <p>From hobbyists to professionals, GitHub helps developers simplify the way they build software.</p>
+          </li>
+          <li>
+            <img src="./img/feature-tile__projects.png" alt="">
+            <h3>Millions of projects</h3>
+            <p>GitHub is home to millions of open source projects. Try one out or get inspired to create your own.</p>
+          </li>
+          <li>
+            <img src="./img/feature-tile__platform.png" alt="">
+            <h3>One platform, from start to finish</h3>
+            <p>With hundreds of integrations, GitHub is flexible enough to be at the center of your development process.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHERE -->
+  <section class="section section--where">
+    <div class="inner">
+      <div class="text-group">
+        <div class="text__title">
+          Where is GitHub?
+        </div>
+        <div class="text__description">
+          GitHub is where people build software. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section section--pricing">
+    <div class="inner">
+      <div class="card">
+        <div class="cell cell1">
+          <a href="" class="btn btn--primary">
+            Sign up for GitHub
+          </a>
+        </div>
+        <div class="cell cell2">
+          Public projects are always free. Work together across unlimited private repositories for $7 / month.
+        </div>
+      </div>
     </div>
   </section>
 </div>
