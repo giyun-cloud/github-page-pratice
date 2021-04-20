@@ -367,3 +367,40 @@ header {
     }
   }
 }
+footer {
+
+  .inner {
+    border-top: 1px solid #eee;
+    padding: 50px 0;
+  }
+  li {
+    font-size: 12px;
+    margin-right: 10px;
+    color: #767676;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      color: #4078c0;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .copyright {
+    display: flex;
+  }
+  .contanct {
+    display: flex;
+  }
+  .logo{
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    margin: auto;
+   &:hover svg {
+      fill: #4078c0
+    }
+  }
+}

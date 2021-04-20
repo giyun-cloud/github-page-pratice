@@ -450,4 +450,54 @@ header .sign-group .sub-menu li a:hover {
   font-weight: 300;
   line-height: 1.5;
 }
+
+footer .inner {
+  border-top: 1px solid #eee;
+  padding: 50px 0;
+}
+
+footer li {
+  font-size: 12px;
+  margin-right: 10px;
+  color: #767676;
+}
+
+footer li:last-child {
+  margin-right: 0;
+}
+
+footer li a {
+  color: #4078c0;
+}
+
+footer li a:hover {
+  text-decoration: underline;
+}
+
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .contanct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .logo {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+footer .logo:hover svg {
+  fill: #4078c0;
+}
 /*# sourceMappingURL=main.css.map */
