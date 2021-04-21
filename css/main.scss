@@ -7,17 +7,18 @@
     
   }
   color: #333333;
-  height: 2891.82px;
 }
 a {
   text-decoration: none;
 }
 .section {
   position: relative;
-}
-.inner {
-  max-width: 980px;
-  margin: 0 auto;
+  .inner {
+    max-width: 980px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+  }
 }
 
 // BTN
@@ -114,9 +115,12 @@ header {
   border-bottom: 1px solid rgba(0,0,0,.75);
   box-shadow: 0 0 5px rgba(0,0,0,.75);
   background-color: #fff;
+  .inner {
+    height: 78px;
+  }
   .menu-group {
     display: flex;
-    height: 78px;
+    height: 100%;
     align-items: center;
     .logo {
       margin-right: 10px;
@@ -145,7 +149,7 @@ header {
   }
   .sign-group {
     display: flex;
-    height: 78px;
+    height: 100%;
     align-items: center;
 
     .sign-btns{
@@ -180,6 +184,16 @@ header {
         }
       }
     }
+  }
+  @at-root #toggle-btn {
+    display: none;
+    text-indent: -9999px;
+    background: url('../img/toggle-btn.svg');
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: 16px;right: 20px;
+    cursor: pointer;
   }
 }
 
@@ -216,7 +230,6 @@ header {
     }
     .text__description {
       color: #fff;
-      font-size: 26px;
       text-shadow: 0 1px 1px rgba(0,0,0,.25),
                    0 1px 25px rgba(0,0,0,.75);
     }

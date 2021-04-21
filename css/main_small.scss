@@ -1,0 +1,56 @@
+.text-group {
+  .text__title {
+    font-size: 34px !important;
+  }
+  .text__description {
+    font-size: 22px;
+  }
+}
+.section--welcome {
+  .tiles {
+    ul {
+      li {
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e5e5e5;
+      }
+    }
+  }
+}
+#map {
+  width: auto;
+  margin: 40px -20px 0;
+  border-left: none;
+  border-right: none;
+}
+
+// PRICING
+.section--pricing {
+  .card {
+    display: block;
+    .cell1 {
+      border-right: none;
+    }
+    .cell2 {
+      border-top: 1px solid #e5e5e5;
+    }
+  }
+}
+
+// FOOTER
+footer {
+  .copyright,
+  .contanct {
+    float: none;
+    display: block;
+    text-align: center;
+    // justify-content: center;
+  }
+  .contanct {
+    margin-bottom: 20px;
+  }
+  li {
+    display: inline;
+  }
+}
+

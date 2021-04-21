@@ -3,7 +3,6 @@
   font-size: 16px;
   font-weight: 400;
   color: #333333;
-  height: 2891.82px;
 }
 
 a {
@@ -14,9 +13,12 @@ a {
   position: relative;
 }
 
-.inner {
+.section .inner {
   max-width: 980px;
   margin: 0 auto;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .btn {
@@ -128,11 +130,15 @@ header {
   background-color: #fff;
 }
 
+header .inner {
+  height: 78px;
+}
+
 header .menu-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 78px;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -174,7 +180,7 @@ header .sign-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 78px;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -227,6 +233,18 @@ header .sign-group .sub-menu li a:hover {
   color: #4078c0;
 }
 
+#toggle-btn {
+  display: none;
+  text-indent: -9999px;
+  background: url("../img/toggle-btn.svg");
+  width: 18px;
+  height: 24px;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  cursor: pointer;
+}
+
 .section--visual {
   background-image: url("../img/bg.jpg");
   background-size: cover;
@@ -271,7 +289,6 @@ header .sign-group .sub-menu li a:hover {
 
 .section--visual .text-group .text__description {
   color: #fff;
-  font-size: 26px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 25px rgba(0, 0, 0, 0.75);
 }
 

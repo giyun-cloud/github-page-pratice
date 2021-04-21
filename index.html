@@ -32,9 +32,12 @@
   <!-- reset-css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" />
 
-  <!-- <link rel="stylesheet" href="./css/main.scss" /> -->
   <link rel="stylesheet" href="./css/main.css" />
-  <script src="./js/main.js"></script>
+  <link rel="stylesheet" media="(max-width: 1024px)" href="./css/main_medium.css" />
+  <link rel="stylesheet" media="(max-width: 768px)" href="./css/main_small.css" />
+
+
+  <script defer src="./js/main.js"></script>
   <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap"></script>
 </head>
 <body>
@@ -45,14 +48,14 @@
         <div class="logo">
           <a href="">Github-logo</a>
         </div>
-        <ul class="main-menu">
+        <ul class="main-menu toggle">
           <li><a href="">Personal</a></li>
           <li><a href="">Open source</a></li>
           <li><a href="">Business</a></li>
           <li><a href="">Explore</a></li>
         </ul>
       </div>
-      <div class="sign-group float--right">
+      <div class="sign-group float--right toggle">
         <div class="sign-btns">
           <a href="" class="btn">Sign in</a>
           <a href="" class="btn btn--primary">Sign up</a>
@@ -67,6 +70,7 @@
           <li><a href="">Support</a></li>
         </ul>
       </div>
+      <div id="toggle-btn">Header Menu Toggle Button</div>
     </div>
   </header>
 
